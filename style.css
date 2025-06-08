@@ -1,0 +1,105 @@
+/* Warna utama */
+
+:root {
+    --blue-light: #00bcd4;
+    --green-light: #8bc34a;
+    --white: #ffffff;
+    --blue-dark: #00695c;
+    --green-dark: #388e3c;
+    --text-dark: #212121;
+    --orange-light: #ffb74d;
+    --purple-light: #9c27b0;
+}
+
+
+/* Global */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, var(--blue-light), var(--green-light));
+    margin: 0;
+    padding: 30px;
+}
+
+
+/* Container Form */
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header */
+
+.header h3 {
+    text-align: center;
+    color: var(--blue-dark);
+    margin-bottom: 25px;
+}
+
+
+/* Label dan Input */
+
+label {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f1f8e9;
+}
+
+
+/* Radio button */
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+p {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+
+/* Tombol */
+
+button {
+    background-color: var(--purple-light);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--orange-light);
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
